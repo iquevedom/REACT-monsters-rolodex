@@ -2,8 +2,12 @@
   "name": "monsters-rolodex",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iquevedom.github.io/REACT-monsters-rolodex",
   "dependencies": {
+    "gh": "^1.17.5",
     "lodash.template": "^4.5.0",
+    "package": "^1.0.1",
+    "pages": "^0.0.16",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -12,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
